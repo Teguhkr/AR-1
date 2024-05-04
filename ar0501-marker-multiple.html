@@ -25,6 +25,17 @@
             <a-asset-item id="motorbike" src="./assets/motorbike/scene.gltf"></a-asset-item>
             <a-asset-item id="helmet" src="./assets/damagedHelmet/damagedHelmet.gltf"></a-asset-item>
             <a-asset-item id="skull" src="./assets/skull_downloadable/scene.gltf"></a-asset-item>
+            <a-asset-item id="cat" src="./assets/Sleeping/scene.gltf"></a-asset-item>
+            <a-asset-item id="Mosquito" src="./assets/Mosquito in/scene.gltf"></a-asset-item>
+            <a-asset-item id="Bee" src="./assets/Bee/scene.gltf"></a-asset-item>
+            <a-asset-item id="Ant" src="./assets/Ant/scene.gltf"></a-asset-item>
+            <a-asset-item id="Whale" src="./assets/Blue Whale/scene.gltf"></a-asset-item>
+            <a-asset-item id="Bond" src="./assets/Bond Forger/scene.gltf"></a-asset-item>
+            <a-asset-item id="Elephant" src="./assets/Elephant/scene.gltf"></a-asset-item>
+            <a-asset-item id="Guppy" src="./assets/Guppy/scene.gltf"></a-asset-item>
+            <a-asset-item id="Koi" src="./assets/Koi Fish/scene.gltf"></a-asset-item>
+            <a-asset-item id="Crocodile" src="./assets/Nile Crocodile Swimming/scene.gltf"></a-asset-item>
+
             <img id="bougenville" src="./images/photo/bougenville.jpg">
             <img id="kio" src="./images/photo/kio.jpg">
             <img id="mahasiswa" src="./images/photo/mahasiswa.jpg">
@@ -47,71 +58,69 @@
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="0">
-            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:red;">
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+            <a-entity gltf-model="#Crocodile" rotation="-90 0 0" position="0 0.5 0" scale="0.2 0.2 0.2"></a-entity>
+            <!-- <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:red;">
                 <a-torus-knot radius="0.26" radius-tubular="0.05"></a-torus-knot>
-            </a-box>
+            </a-box> -->
         </a-marker>
 
         <!-- handle matrix marker -->
+        <!-- 28 -->
         <a-marker type="barcode" value="1">
-            <a-entity gltf-model="#roti"></a-entity>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+            <a-entity gltf-model="#Mosquito" rotation="-90 0 0" position="0 0.5 0" scale="0.009 0.009 0.009"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="2">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
-                <a-gltf-model src="#motorbike" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-entity gltf-model="#Koi" rotation="-90 0 0" position="0 0.5 0" scale="0.1 0.1 0.1"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="3">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white">
-                <a-gltf-model src="#helmet" rotation="0 0 0" position="0 0 0" scale="0 0 0.5"></a-gltf-model>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-entity gltf-model="#Guppy" rotation="-90 0 0" position="0 0.5 0" scale="20 20 20"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="4">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
-                <a-gltf-model src="#skull" rotation="90 0 0" position="0 -0.2 1" scale="0.5 0.5 0.5"></a-gltf-model>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-entity gltf-model="#Bond" rotation="-90 0 0" position="0 0.5 0.5" scale="0.4 0.4 0.4"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="5">
-            <a-image src="#bougenville" rotation="-90 0 0" width="2" height="1">
-                <a-entity position="0 -2.5 0" text-geometry="value: Perpustakaan Sekolah Alam;  style: italic; size: 0.4; weight: bold; height: 0;" material="shader: flat; color: blue" align="center"></a-entity>
-            </a-image>
+            <a-entity gltf-model="#Elephant" rotation="-90 0 0" position="0 0.5 0.5" scale="0.009 0.009 0.009"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="6">
-            <a-image src="#kio" rotation="-90 0 0" width="2" height="1"></a-image>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+            <a-entity gltf-model="#Whale" rotation="-90 0 0" position="0 0.5 0" scale="0.0009 0.0009 0.0009"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="7">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#mahasiswa">
-                <a-text value="Bunga" color="#111" position="0 -0.7 0" align="center"></a-text>
-                <a-sphere color="blue" position="-0.7 -0.7 0" radius="0.2"></a-sphere>
-                <a-sphere color="red" position="0.7 -0.7 0" radius="0.2"></a-sphere>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-entity gltf-model="#Bee" rotation="-90 0 0" position="0 0.5 0" scale="0.05 0.05 0.05"></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="8">
-            <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="white" src="#airterjun">
-                <a-torus-knot radius="0.06" radius-tubular="0.05" position="0.7 -0.7 0">
-                </a-torus-knot>
-                <a-torus-knot radius="0.06" radius-tubular="0.05" position="-0.7 -0.7 0">
-                </a-torus-knot>
-            </a-plane>
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-entity gltf-model="#Ant" rotation="-90 0 0" position="0 0.5 0" scale="0.0008 0.0008 0.0008"></a-entity>
+        </a-marker>
+
+        <a-marker type="barcode" value="9">
+            <a-box position="0 0.5 0" material="opacity: 0.5; side: double;color:white;"></a-box>
+                <a-gltf-model src="#cat" rotation="-30 0 0" position="-0.3 0.5 0" scale="1.2 1.2 1.2"></a-gltf-model>
         </a-marker>
 
         <!-- handle custom marker -->
         <a-marker preset="custom" type="pattern" url="./marker/datamatrix-1234567890/marker-datamatrix-1234567890.patt">
-            <a-image src="#kio" rotation="-90 0 0" width="1" height="1" position="-1 0 -1"></a-image>
+            <a-entity gltf-model="#cat" rotation="-30 0 0" position="-0.3 0.5 0" scale="1 1 1"></a-entity>
         </a-marker>
 
         <!-- handle custom marker -->
